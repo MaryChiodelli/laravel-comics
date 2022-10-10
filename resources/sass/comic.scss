@@ -11,7 +11,7 @@
     img {
       position: absolute;
       bottom: -60px;
-      left: 0;
+      left: 16px;
     }
   }
 
@@ -26,8 +26,67 @@
 
 .comic-intro {
   padding: 60px 0;
+  
+  .col-33 {
+    padding-left: 40px;
+    text-align: right;    
+  }
 
-  .row {
+  .price-info {
+    background-color: $success-color;
+
+    & > * {
+      padding: 0.5rem 1rem;
+    }
+
+    .price {
+      margin-right: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      border-left: 1px solid black;
+    }
+  }
+}
+
+.comic-data {
+  padding: 25px 0 100px;
+  background-color: $bg-light;
+  border-top: 1px solid $dark-gray;
+  border-bottom: 1px solid $dark-gray;
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    border-top: 1px solid $dark-gray;
+    border-bottom: 1px solid $dark-gray;
+    border-collapse: collapse;
+  }
+
+  th {
+    width: 40%;
+  }
+}
+
+.comic-features {
+  background-color: $bg-light;
+  font-size: 12px;
+  
+  .features-wrapper {    
+    border-right: 1px solid $dark-gray;
+    border-left: 1px solid $dark-gray;
+  }
+
+  .col-4 {
     display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  img {
+    height: 37px;
   }
 }

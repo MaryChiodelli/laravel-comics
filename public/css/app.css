@@ -29,8 +29,33 @@ img {
 }
 
 .container-sm {
-  max-width: 1020px;
+  max-width: 1052px;
+  padding: 0 1rem;
   margin: 0 auto;
+}
+
+.col-66 {
+  flex-basis: 66.6666666667%;
+}
+
+.col-33 {
+  flex-basis: 33.3333333333%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+}
+
+.col-4 {
+  flex-basis: 25%;
+}
+
+.list-inline {
+  display: flex;
+}
+
+.row {
+  display: flex;
 }
 
 header {
@@ -212,7 +237,7 @@ footer .footer-cta .container .socials .social-list {
 .hero-comic img {
   position: absolute;
   bottom: -60px;
-  left: 0;
+  left: 16px;
 }
 .hero-comic::after {
   content: "";
@@ -224,6 +249,55 @@ footer .footer-cta .container .socials .social-list {
 .comic-intro {
   padding: 60px 0;
 }
-.comic-intro .row {
+.comic-intro .col-33 {
+  padding-left: 40px;
+  text-align: right;
+}
+.comic-intro .price-info {
+  background-color: #55BA59;
+}
+.comic-intro .price-info > * {
+  padding: 0.5rem 1rem;
+}
+.comic-intro .price-info .price {
+  margin-right: auto;
+}
+.comic-intro .price-info .btn {
+  display: inline-block;
+  border-left: 1px solid black;
+}
+
+.comic-data {
+  padding: 25px 0 100px;
+  background-color: #F6F6F6;
+  border-top: 1px solid #AA9F9F;
+  border-bottom: 1px solid #AA9F9F;
+}
+.comic-data table {
+  width: 100%;
+}
+.comic-data th, .comic-data td {
+  border-top: 1px solid #AA9F9F;
+  border-bottom: 1px solid #AA9F9F;
+  border-collapse: collapse;
+}
+.comic-data th {
+  width: 40%;
+}
+
+.comic-features {
+  background-color: #F6F6F6;
+  font-size: 12px;
+}
+.comic-features .features-wrapper {
+  border-right: 1px solid #AA9F9F;
+  border-left: 1px solid #AA9F9F;
+}
+.comic-features .col-4 {
   display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.comic-features img {
+  height: 37px;
 }
