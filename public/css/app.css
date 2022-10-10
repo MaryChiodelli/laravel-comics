@@ -28,6 +28,11 @@ img {
   margin: 0 auto;
 }
 
+.container-sm {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
 header {
   padding: 1rem 0;
   background-color: #fff;
@@ -194,4 +199,31 @@ footer .footer-cta .container .socials h3 {
 footer .footer-cta .container .socials .social-list {
   display: flex;
   gap: 1rem;
+}
+
+.hero {
+  background: url("../img/jumbotron.jpg") top/cover no-repeat;
+  background-color: #1c1c1c;
+}
+.hero .container-sm {
+  height: 400px;
+  position: relative;
+}
+.hero-comic img {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+}
+.hero-comic::after {
+  content: "";
+  display: block;
+  height: 80px;
+  background-color: #0282F9;
+}
+
+.comic-intro {
+  padding: 60px 0;
+}
+.comic-intro .row {
+  display: flex;
 }

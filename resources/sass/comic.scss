@@ -1,0 +1,33 @@
+.hero {
+  background: url('../img/jumbotron.jpg') top/cover no-repeat;
+  background-color: #1c1c1c;
+
+  .container-sm {
+      height: 400px;
+      position: relative;
+  }
+
+  &-comic {
+    img {
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+    }
+  }
+
+  &-comic::after {
+    content: '';
+    display: block;
+    height: 80px;
+    background-color: $brand-color;
+  }
+
+}
+
+.comic-intro {
+  padding: 60px 0;
+
+  .row {
+    display: flex;
+  }
+}
