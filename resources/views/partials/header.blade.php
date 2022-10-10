@@ -1,7 +1,7 @@
 <header>
   <div class="container">
     <a class="logo" href="/">
-      <img src="img/dc-logo.png" alt="DC Comics logo">
+      <img src="{{ asset('img/dc-logo.png') }}" alt="DC Comics logo">
     </a>
 
     @php
