@@ -5,47 +5,47 @@
 @section('content')
   <div class="hero">
     <div class="container">
-        <h2 class="hero-title">Current series</h2>
+      <h2 class="hero-title">Current series</h2>
     </div>
   </div>
 
   <div class="series">
     <div class="container serie-list">
       @forelse($comics as $comic)
-        <div class="card serie-item">
+        <a href="{{ route('comic', $loop->index) }}" class="card serie-item">
           <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
           <h3>{{ $comic['title'] }}</h3>
-        </div>
+        </a>
       @empty
         <p>No comics available</p>
       @endforelse
     </div>
 
     <div class="container cta">
-        <a href="#">Load More</a>
+      <a href="#">Load More</a>
     </div>
   </div>
 
   @php
   $features = [
     [
-      'src' => asset('img/buy-comics-digital-comics.png'),
+      'src' => 'img/buy-comics-digital-comics.png',
       'text' => 'Digital comics'
     ],
     [
-      'src' => asset('img/buy-comics-merchandise.png'),
+      'src' => 'img/buy-comics-merchandise.png',
       'text' => 'DC merchandise'
     ],
     [
-      'src' => asset('img/buy-comics-subscriptions.png'),
+      'src' => 'img/buy-comics-subscriptions.png',
       'text' => 'Subscription'
     ],
     [
-      'src' => asset('img/buy-comics-shop-locator.png'),
+      'src' => 'img/buy-comics-shop-locator.png',
       'text' => 'Comic shop locator'
     ],
     [
-      'src' => asset('img/buy-dc-power-visa.svg'),
+      'src' => 'img/buy-dc-power-visa.svg',
       'text' => 'DC power visa'
     ]
   ];
